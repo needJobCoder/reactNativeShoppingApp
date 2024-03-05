@@ -21,7 +21,7 @@ const RenderPurchaseItemList = ({data=[]}: any) => {
                     image:item.image,
                     price:item.price,
                     category:item.category,
-                    quantity:0
+                    quantity:1
                 }
                 dispatch(addCart(carObj_))
                 console.log(cartState);

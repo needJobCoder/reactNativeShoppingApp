@@ -31,7 +31,7 @@ const ShopList = () => {
 
         if(loginState === true)
         {
-            axios.get(baseUrl + shoppingBasePrefix + getAllShoppingItem + "7/")
+            axios.get(baseUrl + shoppingBasePrefix + getAllShoppingItem +  `${user_id}/`)
             .then(function (response) {
                 console.log(response.data);
 
